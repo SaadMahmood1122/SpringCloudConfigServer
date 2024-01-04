@@ -15,6 +15,7 @@ public class Client1Controller {
     String msg;
     @GetMapping("/")
     public ResponseEntity<String> showMsg(){
+        System.out.println("Hi i did the changes second time");
         return new ResponseEntity<String>(msg, HttpStatus.OK);
     }
 }
